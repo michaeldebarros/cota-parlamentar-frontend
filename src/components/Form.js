@@ -1,7 +1,6 @@
 import React from "react";
 import List from "./List";
 import axios from "axios";
-
 var results;
 
 class Form extends React.Component {
@@ -18,16 +17,30 @@ class Form extends React.Component {
   }
 
   handleSubmit() {
-    const url = `localhost:3001/2016/${
+    const url = `/2016/${
       this.state.value
     }/MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR`;
+    console.log("handlesubmit called");
     axios
       .get(url)
       .then(function(response) {
-        console.log("where is the response?");
-        console.log(response);
+        console.log("this is respnse:", response);
       })
       .catch(function(error) {
+        console.log(error);
+      });
+  }
+
+  componentDidMount() {
+    axios
+      .get(
+        `/2016/ADAIL CARNEIRO/MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR`
+      )
+      .then(response => {
+        results = response.data;
+        console.log("this is the response",results);
+      })
+      .catch(error => {
         console.log(error);
       });
   }
@@ -762,7 +775,7 @@ class Form extends React.Component {
           </select>
         </label>
         <input type="submit" value="Submit" />
-        <List results={results} />
+        <List results="String results" />
       </form>
     );
   }
