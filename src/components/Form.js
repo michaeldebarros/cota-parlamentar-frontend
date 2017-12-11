@@ -1,12 +1,12 @@
 import React from "react";
 import List from "./List";
 import axios from "axios";
-var results;
+//var results;
 
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { results: [] };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,29 +16,15 @@ class Form extends React.Component {
     this.setState({ value: event.target.value });
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault();
     const url = `/2016/${
       this.state.value
     }/MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR`;
-    console.log("handlesubmit called");
     axios
       .get(url)
-      .then(function(response) {
-        console.log("this is respnse:", response);
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-  }
-
-  componentDidMount() {
-    axios
-      .get(
-        `/2016/ADAIL CARNEIRO/MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR`
-      )
       .then(response => {
-        results = response.data;
-        console.log("this is the response",results);
+        this.setState({ results: response.data });
       })
       .catch(error => {
         console.log(error);
@@ -775,7 +761,7 @@ class Form extends React.Component {
           </select>
         </label>
         <input type="submit" value="Submit" />
-        <List results="String results" />
+        <List results={this.state.results} />
       </form>
     );
   }
