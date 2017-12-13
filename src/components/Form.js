@@ -6,14 +6,29 @@ import axios from "axios";
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { results: [] };
+    this.state = {
+      results: [],
+      nome: "",
+      ano: "",
+      despesa: ""
+    };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChangeNome = this.handleChangeNome.bind(this);
+    this.handleChangeAno = this.handleChangeAno.bind(this);
+    this.handleChangeDespesa = this.handleChangeDespesa.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
+  handleChangeNome(event) {
+    this.setState({ nome: event.target.value });
+  }
+
+  handleChangeAno(event) {
+    this.setState({ ano: event.target.value });
+  }
+
+  handleChangeDespesa(event) {
+    this.setState({ despesa: event.target.value });
   }
 
   handleSubmit(e) {
@@ -36,7 +51,8 @@ class Form extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Nome do Parlamentar:
-          <select value={this.state.value} onChange={this.handleChange}>
+          <select value={this.state.value} onChange={this.handleChangeNome}>
+            <option value="" />
             <option value="ABEL MESQUITA JR.">ABEL MESQUITA JR. DEM-RR</option>
             <option value="ADAIL CARNEIRO">ADAIL CARNEIRO PP-CE</option>
             <option value="ADALBERTO CAVALCANTI">
@@ -758,6 +774,71 @@ class Form extends React.Component {
             <option value="ZECA DIRCEU">ZECA DIRCEU PT-PR</option>
             <option value="ZECA DO PT">ZECA DO PT PT-MS</option>
             <option value="ZENAIDE MAIA">ZENAIDE MAIA PR-RN</option>
+          </select>
+        </label>
+        <label>
+          Ano:
+          <select value={this.state.value} onChange={this.handleChangeAno}>
+            <option value="" />
+            <option value="2016">2017</option>
+            <option value="2016">2017</option>
+          </select>
+        </label>
+        <label>
+          Tipo de despesa:
+          <select value={this.state.value} onChange={this.handleChangeDespesa}>
+            <option value="" />
+            <option value="MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR">
+              MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR
+            </option>
+            <option value="COMBUSTÍVEIS E LUBRIFICANTES.">
+              COMBUSTÍVEIS E LUBRIFICANTES.
+            </option>
+            <option value="CONSULTORIAS, PESQUISAS E TRABALHOS TÉCNICOS.">
+              CONSULTORIAS, PESQUISAS E TRABALHOS TÉCNICOS
+            </option>
+            <option value="DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR.">
+              DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR
+            </option>
+            <option value="SERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA.">
+              SERVIÇO DE SEGURANÇA PRESTADO POR EMPRESA ESPECIALIZADA
+            </option>
+            <option value="TELEFONIA">TELEFONIA</option>
+            <option value="SERVIÇOS POSTAIS">SERVIÇOS POSTAIS</option>
+            <option value="FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR">
+              SERVIÇOS FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR
+            </option>
+            <option value="LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES">
+              LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES
+            </option>
+            <option value="ASSINATURA DE PUBLICAÇÕES">
+              ASSINATURA DE PUBLICAÇÕES
+            </option>
+            <option value="HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL.">
+              HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL
+            </option>
+            <option value="LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES">
+              LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES
+            </option>
+            <option value="LOCAÇÃO OU FRETAMENTO DE EMBARCAÇÕES">
+              LOCAÇÃO OU FRETAMENTO DE EMBARCAÇÕES
+            </option>
+            <option value="LOCAÇÃO OU FRETAMENTO DE AERONAVES">
+              LOCAÇÃO OU FRETAMENTO DE AERONAVES
+            </option>
+            <option value="SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO">
+              SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO
+            </option>
+            <option value="PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS">
+              PASSAGENS TERRESTRES, MARÍTIMAS OU FLUVIAIS
+            </option>
+            <option value="PARTICIPAÇÃO EM CURSO, PALESTRA OU EVENTO SIMILAR">
+              PARTICIPAÇÃO EM CURSO, PALESTRA OU EVENTO SIMILAR
+            </option>
+
+            <option value="Emissão Bilhete Aéreo'">
+              EMISSÃO BILHETE AÉREO
+            </option>
           </select>
         </label>
         <input type="submit" value="Submit" />
