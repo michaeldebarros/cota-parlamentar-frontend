@@ -33,9 +33,9 @@ class Form extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const url = `/2016/${
-      this.state.value
-    }/MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR`;
+    const url = `/${this.state.ano}/${
+      this.state.nome
+    }/${this.state.despesa}`;
     axios
       .get(url)
       .then(response => {
@@ -780,8 +780,8 @@ class Form extends React.Component {
           Ano:
           <select value={this.state.value} onChange={this.handleChangeAno}>
             <option value="" />
-            <option value="2016">2017</option>
-            <option value="2016">2017</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
           </select>
         </label>
         <label>
