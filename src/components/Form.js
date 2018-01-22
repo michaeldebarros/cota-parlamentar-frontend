@@ -11,6 +11,7 @@ class Form extends React.Component {
 			nome: '',
 			ano: '',
 			despesa: '',
+			loading: false
 		};
 
 		this.handleChangeNome = this.handleChangeNome.bind(this);
@@ -33,12 +34,12 @@ class Form extends React.Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		this.setState({ results: [] });
+		this.setState({ results: [], loading: true });
 		const url = `/${this.state.ano}/${this.state.nome}/${this.state.despesa}`;
 		axios
 			.get(url)
 			.then(response => {
-				this.setState({ results: response.data });
+				this.setState({ results: response.data, loading: false });
 			})
 			.catch(error => {
 				console.log(error);
@@ -698,8 +699,8 @@ class Form extends React.Component {
 						<option value="Emissão Bilhete Aéreo'">EMISSÃO BILHETE AÉREO</option>
 					</select>
 				</label>
-				<input type="submit" value="Pesquisar" />
-				<List results={this.state.results} />
+				<input type="submit" value="Pesquisar" className="btn btn-default" />
+				<List results={this.state.results} loading={this.state.loading} />
 			</form>
 		);
 	}

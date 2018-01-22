@@ -11,11 +11,27 @@
 
 body {
 	background-color: #22a527;
+	font-size: 200%;
+}
+
+.Instructions {
+	background-color: #f4e542;
+	text-align: justify;
+	margin: 2%;
+}
+
+.Instructions-text {
+	padding: 1%;
+}
+
+.Example-response{
+	text-align: justify;
+	word-spacing: normal; 
 }
 
 select {
 	margin: 40px;
-	background: rgba(0, 0, 0, 0.3);
+	background: #4e77d8;
 	color: #fff;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
@@ -25,7 +41,7 @@ ul {
 	text-align: left;
 }
 .App-title {
-	font-size: 1.5em;
+	font-size: 3.5em;
 }
 
 .App-intro {
