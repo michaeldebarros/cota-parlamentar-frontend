@@ -1,9 +1,11 @@
 import React from 'react';
+import { RotateSpinLoader } from 'react-css-loaders';
+
 
 const List = props => {
 	console.log(props);
 	if (props.loading) {
-		return <h3> Carregando ... (devido à quantidade de dados isso pode demorar um pouco)</h3>
+		return <RotateSpinLoader />
 	}
 	if (props.results === 'Não há dados para essa requisição.') {
 		return <p> Não há dados para essa requisição</p>;
@@ -14,6 +16,13 @@ const List = props => {
 		</li>
 	));
 	return <ul>{arrayResults}</ul>;
+};
+
+
+RotateSpinLoader.defaultProps = {
+	color: '#f4e542',
+	duration: 1.1,
+	size: 10
 };
 
 export default List;

@@ -68,8 +68,6 @@ class App extends Component {
 							"numeroRestituicao": "5624"
 						}, (...)]</h4></h3>
 
-
-
 							<h3 className="Instructions-text"> É necessário usar os nomes de deputados e tipos de despesa exatamente como aparecem na lista abaixo, bastando tirar a sigla do partido e Estado.</h3>
 						</div>
 					</div>
