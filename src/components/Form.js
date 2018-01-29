@@ -59,6 +59,7 @@ class Form extends React.Component {
 						<option value="ADELMO CARNEIRO LEÃO">ADELMO CARNEIRO LEÃO PT-MG</option>
 						<option value="ADELSON BARRETO">ADELSON BARRETO PR-SE</option>
 						<option value="ADEMIR CAMILO">ADEMIR CAMILO PODE-MG</option>
+						<option value="ADÉRMIS MARINI">ADÉRMIS MARINI PSDB-SP</option>
 						<option value="ADILTON SACHETTI">ADILTON SACHETTI S.PART.-MT</option>
 						<option value="AELTON FREITAS">AELTON FREITAS PR-MG</option>
 						<option value="AFONSO FLORENCE">AFONSO FLORENCE PT-BA</option>
@@ -111,6 +112,7 @@ class Form extends React.Component {
 						<option value="ARTHUR VIRGÍLIO BISNETO">ARTHUR VIRGÍLIO BISNETO PSDB-AM</option>
 						<option value="ASSIS CARVALHO">ASSIS CARVALHO PT-PI</option>
 						<option value="ASSIS DO COUTO">ASSIS DO COUTO PDT-PR</option>
+						<option value="ASSIS MELO">ASSIS MELO PCdoB-RS</option>
 						<option value="ÁTILA A. NUNES">ÁTILA A. NUNES PMDB-RJ</option>
 						<option value="ÁTILA LINS">ÁTILA LINS PSD-AM</option>
 						<option value="ÁTILA LIRA">ÁTILA LIRA PSB-PI</option>
@@ -154,6 +156,7 @@ class Form extends React.Component {
 						<option value="CARLOS MARUN">CARLOS MARUN PMDB-MS</option>
 						<option value="CARLOS MELLES">CARLOS MELLES DEM-MG</option>
 						<option value="CARLOS SAMPAIO">CARLOS SAMPAIO PSDB-SP</option>
+						<option value="CARLOS SOUZA">CARLOS SOUZA PSDB-AM</option>
 						<option value="CARLOS ZARATTINI">CARLOS ZARATTINI PT-SP</option>
 						<option value="CARMEN ZANOTTO">CARMEN ZANOTTO PPS-SC</option>
 						<option value="CÉLIO SILVEIRA">CÉLIO SILVEIRA PSDB-GO</option>
@@ -189,11 +192,13 @@ class Form extends React.Component {
 						<option value="DAVI ALVES SILVA JÚNIOR">DAVI ALVES SILVA JÚNIOR PR-MA</option>
 						<option value="DAVIDSON MAGALHÃES">DAVIDSON MAGALHÃES PCdoB-BA</option>
 						<option value="DÉCIO LIMA">DÉCIO LIMA PT-SC</option>
+						<option value="DEJORGE PATRÍCIO">DEJORGE PATRÍCIO PRB-RJ</option>
 						<option value="DELEGADO ÉDER MAURO">DELEGADO ÉDER MAURO PSD-PA</option>
 						<option value="DELEGADO EDSON MOREIRA">DELEGADO EDSON MOREIRA PR-MG</option>
 						<option value="DELEGADO FRANCISCHINI">DELEGADO FRANCISCHINI SD-PR</option>
 						<option value="DELEGADO WALDIR">DELEGADO WALDIR PR-GO</option>
 						<option value="DELEY">DELEY PTB-RJ</option>
+						<option value="DEOCLIDES MACEDO">DEOCLIDES MACEDO PDT-MA</option>
 						<option value="DIEGO ANDRADE">DIEGO ANDRADE PSD-MG</option>
 						<option value="DIEGO GARCIA">DIEGO GARCIA PHS-PR</option>
 						<option value="DILCEU SPERAFICO">DILCEU SPERAFICO PP-PR</option>
@@ -242,6 +247,7 @@ class Form extends React.Component {
 						<option value="FÁTIMA BEZERRA">FÁTIMA BEZERRA PT-RN</option>
 						<option value="FAUSTO PINATO">FAUSTO PINATO PP-SP</option>
 						<option value="FELIPE BORNIER">FELIPE BORNIER PROS-RJ</option>
+						<option value="FELIPE CARRERAS">FELIPE CARRERAS PSB-PE</option>
 						<option value="FELIPE MAIA">FELIPE MAIA DEM-RN</option>
 						<option value="FÉLIX MENDONÇA JÚNIOR">FÉLIX MENDONÇA JÚNIOR PDT-BA</option>
 						<option value="FERNANDO COELHO FILHO">FERNANDO COELHO FILHO PSB-PE</option>
@@ -291,6 +297,7 @@ class Form extends React.Component {
 						<option value="IRACEMA PORTELLA">IRACEMA PORTELLA PP-PI</option>
 						<option value="IRAJÁ ABREU">IRAJÁ ABREU PSD-TO</option>
 						<option value="IRMÃO LAZARO">IRMÃO LAZARO PSC-BA</option>
+						<option value="IZAQUE SILVA">IZAQUE SILVA PSDB-SP</option>
 						<option value="IVAN VALENTE">IVAN VALENTE PSOL-SP</option>
 						<option value="IZALCI LUCAS">IZALCI LUCAS PSDB-DF</option>
 						<option value="JAIME MARTINS">JAIME MARTINS PSD-MG</option>
@@ -366,14 +373,17 @@ class Form extends React.Component {
 						<option value="LEÔNIDAS CRISTINO">LEÔNIDAS CRISTINO PDT-CE</option>
 						<option value="LEOPOLDO MEYER">LEOPOLDO MEYER PSB-PR</option>
 						<option value="LID.GOV-CD">LID.GOV-CD -</option>
+						<option value="LID.GOV-CN">LID.GOV-CN -</option>
 						<option value="LIDERANÇA DO PSDB">LIDERANÇA DO PSDB -</option>
 						<option value="LIDERANÇA DO PT">LIDERANÇA DO PT -</option>
 						<option value="LINCOLN PORTELA">LINCOLN PORTELA PRB-MG</option>
 						<option value="LINDOMAR GARÇON">LINDOMAR GARÇON PRB-RO</option>
 						<option value="LOBBE NETO">LOBBE NETO PSDB-SP</option>
+						<option value="LOURIVAL GOMES">LOURIVAL GOMES PODE-RJ</option>
 						<option value="LUANA COSTA">LUANA COSTA PSB-MA</option>
 						<option value="LUCAS VERGILIO">LUCAS VERGILIO SD-GO</option>
 						<option value="LUCIANA SANTOS">LUCIANA SANTOS PCdoB-PE</option>
+						<option value="LUCIANO BIVAR">LUCIANO BIVAR PSL-PE</option>
 						<option value="LUCIANO DUCCI">LUCIANO DUCCI PSB-PR</option>
 						<option value="LUCIO MOSQUINI">LUCIO MOSQUINI PMDB-RO</option>
 						<option value="LÚCIO VALE">LÚCIO VALE PR-PA</option>
@@ -391,6 +401,7 @@ class Form extends React.Component {
 						<option value="LUIZ SÉRGIO">LUIZ SÉRGIO PT-RJ</option>
 						<option value="LUIZA ERUNDINA">LUIZA ERUNDINA PSOL-SP</option>
 						<option value="LUIZIANNE LINS">LUIZIANNE LINS PT-CE</option>
+						<option value="LUZIA FERREIRA">LUZIA FERREIRA PPS-MG</option>
 						<option value="MACEDO">MACEDO PP-CE</option>
 						<option value="MAGDA MOFATTO">MAGDA MOFATTO PR-GO</option>
 						<option value="MAIA FILHO">MAIA FILHO PP-PI</option>
@@ -403,6 +414,7 @@ class Form extends React.Component {
 						<option value="MARCELO ARO">MARCELO ARO PHS-MG</option>
 						<option value="MARCELO BELINATI">MARCELO BELINATI PP-PR</option>
 						<option value="MARCELO CASTRO">MARCELO CASTRO PMDB-PI</option>
+						<option value="MARCELO DELAROLI">MARCELO DELAROLI PR-RJ</option>
 						<option value="MARCELO MATOS">MARCELO MATOS PHS-RJ</option>
 						<option value="MARCELO SQUASSONI">MARCELO SQUASSONI PRB-SP</option>
 						<option value="MARCIO ALVINO">MARCIO ALVINO PR-SP</option>
@@ -414,6 +426,7 @@ class Form extends React.Component {
 						<option value="MARCON">MARCON PT-RS</option>
 						<option value="MARCONDES GADELHA">MARCONDES GADELHA PSC-PB</option>
 						<option value="MARCOS ABRÃO">MARCOS ABRÃO PPS-GO</option>
+						<option value="MARCOS MEDRADO">MARCOS MEDRADO PODE-BA</option>
 						<option value="MARCOS MONTES">MARCOS MONTES PSD-MG</option>
 						<option value="MARCOS REATEGUI">MARCOS REATEGUI PSD-AP</option>
 						<option value="MARCOS ROGÉRIO">MARCOS ROGÉRIO DEM-RO</option>
@@ -453,6 +466,7 @@ class Form extends React.Component {
 						<option value="NELSON MARCHEZAN JUNIOR">NELSON MARCHEZAN JUNIOR PSDB-RS</option>
 						<option value="NELSON MARQUEZELLI">NELSON MARQUEZELLI PTB-SP</option>
 						<option value="NELSON MEURER">NELSON MEURER PP-PR</option>
+						<option value="NELSON NAHIM">NELSON NAHIM PSD-RJ</option>
 						<option value="NELSON PADOVANI">NELSON PADOVANI PSDB-PR</option>
 						<option value="NELSON PELLEGRINO">NELSON PELLEGRINO PT-BA</option>
 						<option value="NEWTON CARDOSO JR">NEWTON CARDOSO JR PMDB-MG</option>
@@ -462,6 +476,7 @@ class Form extends React.Component {
 						<option value="NILTO TATTO">NILTO TATTO PT-SP</option>
 						<option value="NILTON CAPIXABA">NILTON CAPIXABA PTB-RO</option>
 						<option value="NIVALDO ALBUQUERQUE">NIVALDO ALBUQUERQUE PRP-AL</option>
+						<option value="NORMA AYUB">NORMA AYUB DEM-ES</option>
 						<option value="ODAIR CUNHA">ODAIR CUNHA PT-MG</option>
 						<option value="ODELMO LEÃO">ODELMO LEÃO PP-MG</option>
 						<option value="ODORICO MONTEIRO">ODORICO MONTEIRO PSB-CE</option>
@@ -499,6 +514,7 @@ class Form extends React.Component {
 						<option value="PEDRO VILELA">PEDRO VILELA PSDB-AL</option>
 						<option value="PEPE VARGAS">PEPE VARGAS PT-RS</option>
 						<option value="PHS">PHS -</option>
+						<option value="PODE">PODE -</option>
 						<option value="POLLYANA GAMA">POLLYANA GAMA PPS-SP</option>
 						<option value="POMPEO DE MATTOS">POMPEO DE MATTOS PDT-RS</option>
 						<option value="PR. MARCO FELICIANO">PR. MARCO FELICIANO PSC-SP</option>
@@ -520,6 +536,7 @@ class Form extends React.Component {
 						<option value="REJANE DIAS">REJANE DIAS PT-PI</option>
 						<option value="REMÍDIO MONAI">REMÍDIO MONAI PR-RR</option>
 						<option value="RENATA ABREU">RENATA ABREU PODE-SP</option>
+						<option value="RENATO ANDRADE">RENATO ANDRADE PP-MG</option>
 						<option value="RENATO MOLLING">RENATO MOLLING PP-RS</option>
 						<option value="RENZO BRAZ">RENZO BRAZ PP-MG</option>
 						<option value="RICARDO BARROS">RICARDO BARROS PP-PR</option>
@@ -535,7 +552,9 @@ class Form extends React.Component {
 						<option value="ROBERTO GÓES">ROBERTO GÓES PDT-AP</option>
 						<option value="ROBERTO SALES">ROBERTO SALES PRB-RJ</option>
 						<option value="ROBERTO TEIXEIRA">ROBERTO TEIXEIRA PP-PE</option>
+						<option value="ROBINSON ALMEIDA">ROBINSON ALMEIDA PT-BA</option>
 						<option value="ROCHA">ROCHA PSDB-AC</option>
+						<option value="ROCHA LOURES">ROCHA LOURES PMDB-PR</option>
 						<option value="RODRIGO DE CASTRO">RODRIGO DE CASTRO PSDB-MG</option>
 						<option value="RODRIGO GARCIA">RODRIGO GARCIA DEM-SP</option>
 						<option value="RODRIGO MAIA">RODRIGO MAIA DEM-RJ</option>
@@ -544,6 +563,7 @@ class Form extends React.Component {
 						<option value="ROGÉRIO MARINHO">ROGÉRIO MARINHO PSDB-RN</option>
 						<option value="ROGÉRIO PENINHA MENDONÇA">ROGÉRIO PENINHA MENDONÇA PMDB-SC</option>
 						<option value="ROGÉRIO ROSSO">ROGÉRIO ROSSO PSD-DF</option>
+						<option value="ROGÉRIO SILVA">ROGÉRIO SILVA PMDB-MT</option>
 						<option value="RÔMULO GOUVEIA">RÔMULO GOUVEIA PSD-PB</option>
 						<option value="RONALDO BENEDET">RONALDO BENEDET PMDB-SC</option>
 						<option value="RONALDO CARLETTO">RONALDO CARLETTO PP-BA</option>
@@ -599,6 +619,7 @@ class Form extends React.Component {
 						<option value="TONINHO PINHEIRO">TONINHO PINHEIRO PP-MG</option>
 						<option value="TONINHO WANDSCHEER">TONINHO WANDSCHEER PROS-PR</option>
 						<option value="ULDURICO JUNIOR">ULDURICO JUNIOR PV-BA</option>
+						<option value="VAIDON OLIVEIRA">VAIDON OLIVEIRA PROS-CE</option>
 						<option value="VAL AMÉLIO">VAL AMÉLIO PRTB-AL</option>
 						<option value="VALADARES FILHO">VALADARES FILHO PSB-SE</option>
 						<option value="VALDIR COLATTO">VALDIR COLATTO PMDB-SC</option>
@@ -623,6 +644,7 @@ class Form extends React.Component {
 						<option value="WALDIR MARANHÃO">WALDIR MARANHÃO AVANTE-MA</option>
 						<option value="WALNEY ROCHA">WALNEY ROCHA PEN-RJ</option>
 						<option value="WALTER ALVES">WALTER ALVES PMDB-RN</option>
+						<option value="WALTER IHOSHI">WALTER IHOSHI PSD-SP</option>
 						<option value="WASHINGTON REIS">WASHINGTON REIS PMDB-RJ</option>
 						<option value="WELITON PRADO">WELITON PRADO PROS-MG</option>
 						<option value="WELLINGTON ROBERTO">WELLINGTON ROBERTO PR-PB</option>
@@ -632,6 +654,8 @@ class Form extends React.Component {
 						<option value="WILSON FILHO">WILSON FILHO PTB-PB</option>
 						<option value="WLADIMIR COSTA">WLADIMIR COSTA SD-PA</option>
 						<option value="WOLNEY QUEIROZ">WOLNEY QUEIROZ PDT-PE</option>
+						<option value="XUXU DAL MOLIN">XUXU DAL MOLIN PSC-MT</option>
+						<option value="YEDA CRUSIUS">YEDA CRUSIUS PSDB-RS</option>
 						<option value="ZÉ AUGUSTO NALIN">ZÉ AUGUSTO NALIN PMDB-RJ</option>
 						<option value="ZÉ CARLOS">ZÉ CARLOS PT-MA</option>
 						<option value="ZÉ GERALDO">ZÉ GERALDO PT-PA</option>
