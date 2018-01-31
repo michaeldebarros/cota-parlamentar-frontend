@@ -3,7 +3,6 @@ import { RotateSpinLoader } from 'react-css-loaders';
 
 
 const List = props => {
-	console.log(props);
 	if (props.loading) {
 		return <RotateSpinLoader />
 	}
