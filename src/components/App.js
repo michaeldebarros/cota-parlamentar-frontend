@@ -6,8 +6,8 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<div class="container-fluid">
-					<div class="row">
+				<div className="container-fluid">
+					<div className="row-fluid">
 						<div className="col-xs-12">
 							<header className="App-header">
 								<h1 className="App-title">Cota Parlamentar API</h1>
@@ -67,17 +67,16 @@ class App extends Component {
 							"valor": "220",
 							"numeroRestituicao": "5624"
 						}, (...)]</h4></h3>
-
 							<h3 className="Instructions-text"> É necessário usar os nomes de deputados e tipos de despesa exatamente como aparecem na lista abaixo, bastando tirar a sigla do partido e Estado.</h3>
 						</div>
 					</div>
-					<div className="App-body">
-						<div>
+					<div className="row">
+						<div className="col-xs-12">
 							<Form />
 						</div>
 					</div>
 				</div>
-			</div>
+			</div >
 		);
 	}
 }
