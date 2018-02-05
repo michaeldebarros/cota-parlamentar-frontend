@@ -22,7 +22,12 @@ body {
 	border-radius: 25px;
 }
 
+.Instructions-example{
+	
+}
+
 .Instructions-text {
+	overflow-wrap: break-word;
 	padding: 1%;
 }
 

@@ -19,7 +19,7 @@ const List = props => {
 
 
 RotateSpinLoader.defaultProps = {
-	color: '#f4e542',
+	color: '#4e77d8',
 	duration: 1.1,
 	size: 10
 };

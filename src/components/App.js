@@ -15,10 +15,10 @@ class App extends Component {
 						</div>
 					</div>
 					<div className="row">
-						<div className="Instructions">
+						<div className="Instructions col-xs-11" >
 							<h3 className="Instructions-text">
 								Esta API é um projeto bastante simples. Trata-se uma aplicação que filtra registros
-								contidos nos arquivos .csv referentes às despesas de deputados obtidos no site da{' '}
+								contidos nos arquivos .csv referentes às despesas de Deputados obtidos no site da{' '}
 								<a href="http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/dados-abertos-cota-parlamentar">
 									{' '}
 									Câmara dos Deputados
@@ -71,7 +71,10 @@ class App extends Component {
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-xs-12">
+						<div className="col-xs-11 Instructions Instructions-example" >
+							<h3 className="Instructions-text"><b>Exemplo de informações</b></h3>
+							<h3 className="Instructions-text">Os dados obtidos no site da Câmara dos Deputados estão organizados em ordem alfabética por nome de Deputado.  Assim, quanto adiante no alfabeto mais vai demorar o retorno das informações.</h3>
+
 							<Form />
 						</div>
 					</div>
