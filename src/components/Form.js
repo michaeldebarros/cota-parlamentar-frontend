@@ -24,6 +24,7 @@ class Form extends React.Component {
 		this.setState({ nome: event.target.value });
 	}
 
+
 	handleChangeAno(event) {
 		this.setState({ ano: event.target.value });
 	}
@@ -49,10 +50,10 @@ class Form extends React.Component {
 	render() {
 		return (
 			<form onSubmit={this.handleSubmit} >
-				<div className="form-group">
+				<div className="form-group form-inline">
 					<label>
 						Nome do Parlamentar:
-					<select value={this.state.value} onChange={this.handleChangeNome}>
+					<select value={this.state.value} onChange={this.handleChangeNome} className="form-control">
 							<option value="" />
 							<option value="ABEL MESQUITA JR.">ABEL MESQUITA JR. DEM-RR</option>
 							<option value="ADAIL CARNEIRO">ADAIL CARNEIRO PP-CE</option>
@@ -667,21 +668,19 @@ class Form extends React.Component {
 							<option value="ZENAIDE MAIA">ZENAIDE MAIA PR-RN</option>
 						</select>
 					</label>
-				</div>
-				<div className="form-group">
 					<label>
 						Ano:
-					<select value={this.state.value} onChange={this.handleChangeAno}>
+					<select value={this.state.value} onChange={this.handleChangeAno} className="form-control">
 							<option value="" />
 							<option value="2016">2016</option>
 							<option value="2017">2017</option>
 						</select>
 					</label>
 				</div>
-				<div className="form-group">
+				<div className="form-group form-inline">
 					<label>
 						Tipo de despesa:
-					<select value={this.state.value} onChange={this.handleChangeDespesa}>
+					<select value={this.state.value} onChange={this.handleChangeDespesa} className="form-control ">
 							<option value="" />
 							<option value="MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR">
 								MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR
@@ -728,8 +727,8 @@ class Form extends React.Component {
 							<option value="Emissão Bilhete Aéreo'">EMISSÃO BILHETE AÉREO</option>
 						</select>
 					</label>
+					<input type="submit" value="Pesquisar" className="btn btn-default" />
 				</div>
-				<input type="submit" value="Pesquisar" className="btn btn-default" />
 				<List results={this.state.results} loading={this.state.loading} />
 			</form>
 		);
