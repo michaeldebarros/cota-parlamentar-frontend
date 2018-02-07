@@ -22,7 +22,12 @@ body {
 	border-radius: 25px;
 }
 
+.Instructions-example{
+	
+}
+
 .Instructions-text {
+	overflow-wrap: break-word;
 	padding: 1%;
 }
 
@@ -32,7 +37,7 @@ body {
 }
 
 select {
-	margin: 40px;
+	margin: 20px;
 	background: #4e77d8;
 	color: #fff;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
