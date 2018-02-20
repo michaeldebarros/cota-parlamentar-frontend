@@ -25,7 +25,7 @@ class App extends Component {
 								</a>. A resposta é um array de objetos em formato JSON.
 							</h3>
 							<h3 className="Instructions-text">Para usar esta API basta fazer uma requisição GET com os seguintes parâmetros: <i>/:ano/:nome_do_deputado/:tipo de despesa </i></h3>
-							<h3 className="Instructions-text"><b>Exemplo de requisição:</b> <span className="Request">https://cota-parlamentar.herokuapp.com/api/2016/ALFREDO NASCIMENTO/COMBUSTÍVEIS E LUBRIFICANTES.</span > <i> (incluir o ponto)</i></h3>
+							<h3 className="Instructions-text"><b>Exemplo de requisição:</b> <span className="Request">http://www.cotaparlamentar.com/api/2016/ALFREDO NASCIMENTO/COMBUSTÍVEIS E LUBRIFICANTES.</span > <i> (incluir o ponto)</i></h3>
 
 							<h3 className="Instructions-text"><b>Exemplo de resposta:</b> <h4 className="Example-response">[
 							{`{`}
