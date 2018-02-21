@@ -43,6 +43,7 @@ class Form extends React.Component {
 				this.setState({ results: response.data, loading: false });
 			})
 			.catch(error => {
+				this.setState({ results: "server timeout", loading: false });
 				console.log(error);
 			});
 	}
