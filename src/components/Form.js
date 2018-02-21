@@ -36,13 +36,14 @@ class Form extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		this.setState({ results: [], loading: true });
-		const url = `/${this.state.ano}/${this.state.nome}/${this.state.despesa}`;
+		const url = `/api/${this.state.ano}/${this.state.nome}/${this.state.despesa}`;
 		axios
 			.get(url)
 			.then(response => {
 				this.setState({ results: response.data, loading: false });
 			})
 			.catch(error => {
+				this.setState({ results: "server timeout", loading: false });
 				console.log(error);
 			});
 	}
@@ -69,8 +70,8 @@ class Form extends React.Component {
 							<option value="AFONSO MOTTA">AFONSO MOTTA PDT-RS</option>
 							<option value="AGUINALDO RIBEIRO">AGUINALDO RIBEIRO PP-PB</option>
 							<option value="ALAN RICK">ALAN RICK DEM-AC</option>
-							<option value="ALBERTO FILHO">ALBERTO FILHO PMDB-MA</option>
 							<option value="ALBERTO FRAGA">ALBERTO FRAGA DEM-DF</option>
+							<option value="ALBERTO FILHO">ALBERTO FILHO PMDB-MA</option>
 							<option value="ALCEU MOREIRA">ALCEU MOREIRA PMDB-RS</option>
 							<option value="ALESSANDRO MOLON">ALESSANDRO MOLON REDE-RJ</option>
 							<option value="ALEX CANZIANI">ALEX CANZIANI PTB-PR</option>
