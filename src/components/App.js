@@ -17,7 +17,7 @@ class App extends Component {
 					<div className="row">
 						<div className="col-xs-11 Instructions Instructions-example" >
 							<h3 className="Instructions-text">
-								Estae é um projeto bastante simples. Trata-se uma aplicação que filtra registros
+								Este é um projeto bastante simples. Trata-se uma aplicação que filtra registros
 								contidos nos arquivos .csv referentes às despesas de Deputados obtidos no site da{' '}
 								<a href="http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/dados-abertos-cota-parlamentar">
 									{' '}
