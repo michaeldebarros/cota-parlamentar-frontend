@@ -1,7 +1,6 @@
 import React from 'react';
 import List from './List';
 import axios from 'axios';
-//var results;
 
 class Form extends React.Component {
 	constructor(props) {
@@ -41,17 +40,9 @@ class Form extends React.Component {
 			.get(url)
 			.then(response => {
 				this.setState({ results: response.data, loading: false });
-				console.log(response.data.leng);
 			})
 			.catch(error => {
-				if (error.response.status === 503) {
-					setTimeout(() => {
-						axios.get(`/api/second`)
-							.then(response => {
-								this.setState({ results: response.data, loading: false });
-							})
-					}, 6000);
-				}
+				console.log(error);
 			});
 	}
 

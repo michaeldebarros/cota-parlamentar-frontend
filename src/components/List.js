@@ -6,8 +6,8 @@ const List = props => {
 	if (props.loading) {
 		return <RotateSpinLoader />
 	}
-	if (props.results === "No Register") {
-		return <p> Não há dados para essa requisição</p>;
+	if (props.results === null) {
+		return <h3> Não há dados para essa requisição</h3>;
 	}
 
 	let arrayResults = props.results.map(result => (

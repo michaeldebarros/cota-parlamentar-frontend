@@ -9,11 +9,11 @@
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp -r ./build ../cota-parlamentar",
-    "prebuild": "rm -rf build && cd ../cota-parlamentar && rm -rf build",
+    "build": "react-scripts build && cp -r ./build ../Go/src/cota-parlamentar-go",
+    "prebuild": "rm -rf build && cd ../Go/src/cota-parlamentar-go && rm -rf build",
     "deploy": "cd ../cota-parlamentar && git push heroku deploy:master",
     "predeploy": "cd ../cota-parlamentar && git add . && git commit -m 'latest version'",
     "test": "react-scripts test --env=jsdom",
