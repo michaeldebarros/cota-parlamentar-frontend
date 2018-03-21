@@ -12,7 +12,7 @@ const List = props => {
 
 	let arrayResults = props.results.map(result => (
 		<li key={result.numeroRestituicao}>
-			Nome: {result.nome}; valor: R$ {result.valor},00; data: {result.data}; fonecedor: {result.fornecedor}.
+			Nome: {result.nome}; valor: R$ {result.valor}; data: {result.data}; fonecedor: {result.fornecedor}.
 		</li>
 	));
 	return <ul>{arrayResults}</ul>;
