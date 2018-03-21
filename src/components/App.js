@@ -25,7 +25,6 @@ class App extends Component {
 								</a>.
 							</h3>
 							<h3 className="Instructions-text">Os dados obtidos no site da Câmara dos Deputados estão organizados em ordem alfabética por nome de Deputado.</h3>
-							<h3 className="Instructions-text">Assim, quanto mais adiante no alfabeto mais vai demorar o retorno das informações. Para Deputados cujos nomes iniciam com a letra "Z" a requisição pode demorar até 20 segundos.</h3>
 							<h3 className="Instructions-text"> Maiores informações podem ser obtidas <a href="https://github.com/michaeldebarros/cota-parlamentar/wiki">aqui</a>.</h3>
 							<Form />
 						</div>
