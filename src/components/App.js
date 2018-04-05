@@ -25,7 +25,7 @@ class App extends Component {
 								</a>.
 							</h3>
 							<h3 className="Instructions-text">Os dados obtidos no site da Câmara dos Deputados estão organizados em ordem alfabética por nome de Deputado.</h3>
-							<h3 className="Instructions-text"> Maiores informações podem ser obtidas <a href="https://github.com/michaeldebarros/cota-parlamentar/wiki">aqui</a>.</h3>
+							<h3 className="Instructions-text"> Esta aplicação também possui uma API cujas informações podem ser obtidas <a href="https://github.com/michaeldebarros/cota-parlamentar/wiki">aqui</a>.</h3>
 							<Form />
 						</div>
 					</div>
